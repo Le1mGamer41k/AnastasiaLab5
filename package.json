@@ -1,0 +1,35 @@
+{
+    "name": "tour-platform",
+    "version": "1.0.0",
+    "description": "Туристична платформа з React фронтендом та Express бекендом",
+    "main": "start.js",
+    "scripts": {
+    "start": "node start.js",
+        "predeploy": "npm run install-all",
+        "install-all": "npm run install-backend && npm run install-frontend",
+        "install-backend": "cd backend && npm install",
+        "install-frontend": "cd frontend && npm install",
+        "dev": "node start.js",
+        "backend": "cd backend && npm run dev",
+        "frontend": "cd frontend && npm start",
+        "build": "cd frontend && npm run build",
+        "test": "echo \"Error: no test specified\" && exit 1"
+},
+    "keywords": [
+    "tour",
+    "travel",
+    "react",
+    "express",
+    "firebase",
+    "platform"
+],
+    "author": "Your Name",
+    "license": "MIT",
+    "devDependencies": {
+    "concurrently": "^8.2.0"
+},
+    "engines": {
+    "node": ">=14.0.0",
+        "npm": ">=6.0.0"
+}
+}
